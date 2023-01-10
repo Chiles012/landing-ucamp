@@ -1,0 +1,315 @@
+/* Estilos globales */
+html {
+    font-family: spotify-circular,Helvetica,Arial,sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.btn-border {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .3s ease;
+}
+
+.btn-border:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* Estilos de la sección header */
+nav.menu {
+    background-color: #000;
+    color: #fff;
+}
+
+nav.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo svg {
+    width: 100px;
+    fill: #fff;
+}
+
+.header-navegation {
+    background-color: #000;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.header-navegation div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+.header-info {
+    background-color: #1d75df;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.header-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header-info-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-info a {
+    text-decoration: underline;
+    font-size: 10px;
+    margin-top: 40px;
+}
+
+/* Estilos de la sección beneficios */
+.proceeds-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.proceeds h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.proceeds-container .proceeds-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proceeds-container .proceeds-item i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la sección Planes */
+.plans {
+    background-color: #eeeeee;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.plans-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left!important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plans-item p {
+    text-align: left!important;
+    margin: 0;
+}
+
+.plans h2, .plans p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.blue {
+    border: solid 1px #1d75df;
+    padding: 5px;
+    border-radius: 5px;
+    color: #1d75df;
+    font-weight: bold;
+    display: inline;
+}
+
+.plans-item .btn {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.plans-item a {
+    text-decoration: underline;
+    font-size: 10px;
+    margin-top: 40px;
+    color: #000;
+}
+
+.plans-item li {
+    margin-bottom: 10px;
+}
+
+.plans-item-footer {
+    height: 200px;
+}
+
+/* Estilos de la sección footer */
+footer {
+    background-color: #000;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.n1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #1ed760;
+}
+
+footer .social-networks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .social-networks ul li {
+    font-size: 20px;
+}
+
+footer .legal {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* Media queries */
+/* Responsive tablets */
+@media screen and (max-width: 992px) {
+    /** beneficios **/
+    .proceeds-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proceeds-item {
+        flex-direction: row!important;
+        align-items: center!important;
+        gap: 10px;
+    }
+    .proceeds-item-body {
+        text-align: left;
+    }
+    .proceeds-item-body h3, .proceeds-item-body p {
+        margin: 0;
+    }
+    .proceeds-container .proceeds-item i {
+        margin-bottom: 0;
+    }
+
+    /** planes **/
+    .plans-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+/* Responsive Movil */
+@media screen and (max-width: 768px) {
+    /* Menu */
+    .menu {
+        display: none;
+    }
+    .menu-responsive {
+        display: block;
+    }
+
+    /* Beneficios */
+    .proceeds-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        text-align: center;
+    } 
+    .company {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .comunity {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .networks {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    .social-networks {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+}
